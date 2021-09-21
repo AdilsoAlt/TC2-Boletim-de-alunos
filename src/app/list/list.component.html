@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" width="80%">Nome</th>
+            <th scope="col" width="10%">Idade</th>
+            <th scope="col" width="10%">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let aluno of lista">
+            <td>{{aluno.name}}</td>
+            <td>{{aluno.age}}</td>
+            <td>
+              <button type="button" class="btn btn-sm btn-primary" (click)="mostrarProfile(aluno)">Ver Perfil</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <ng-container *ngIf="alunoSelecionado">
+        <app-profile [exibirPerfil] = "alunoSelecionado"></app-profile>
+      </ng-container>
+    </div>
+  </div>
+</div>

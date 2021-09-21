@@ -1,0 +1,4 @@
+Componente 1 - Responsável por exibir a lista de alunos na tela. OK
+Componente 2 - Responsável por exibir o formulário de cadastro na tela. 
+Componente 3 - Responsável por exibir os detalhes do usuário na tela. OK
+Componente 4 - Responsável pelo menu. OK
