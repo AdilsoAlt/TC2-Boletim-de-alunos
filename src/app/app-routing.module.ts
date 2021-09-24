@@ -4,8 +4,8 @@ import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
-  {path: 'listar', component: ListComponent},
-  {path: 'cadastrar', component: FormComponent}
+  { path: 'listar', component: ListComponent },
+  { path: 'cadastrar', component: FormComponent }
 ];
 
 @NgModule({
