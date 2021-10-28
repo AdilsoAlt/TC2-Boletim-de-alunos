@@ -4,6 +4,7 @@ import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
+  { path: '', component: ListComponent },
   { path: 'listar', component: ListComponent },
   { path: 'cadastrar', component: FormComponent }
 ];

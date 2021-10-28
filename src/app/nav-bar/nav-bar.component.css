@@ -1,3 +1,11 @@
-ul{
+@import 'bulma/css/bulma.css';
+.navbar-menu{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.navbar-start{
+    margin-right:0px ;
+    display: flex;
     justify-content: center;
 }

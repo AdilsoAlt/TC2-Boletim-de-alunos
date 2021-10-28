@@ -1,3 +1,8 @@
+@import 'bulma/css/bulma.css';
+
+.buttons{
+    justify-content: center;
+}
 .table{
     text-align: center;
 }
