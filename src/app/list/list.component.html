@@ -13,9 +13,9 @@
             <td>{{aluno.name}}</td>
             <td>
               <div class="buttons">
-              <button type="button" class="button is-primary is-normal" (click)="mostrarProfile(aluno)">Ver Perfil</button>
-              <button type="button" class="button is-warning">Editar</button>
-              <button type="button" class="button is-danger">Deletar</button>
+              <a routerLink="/profile/{{aluno.id}}" class="button is-primary is-normal">Ver Perfil</a>
+              <a routerLink="/editar/{{aluno.id}}" class="button is-warning">Editar</a>
+              <a routerLink="/excluir/{{aluno.id}}" class="button is-danger">Deletar</a>
             </div>
             </td>
           </tr>
@@ -24,10 +24,3 @@
     </div>
   </div>
 </div>
-<!--
-    <div class="col-md-6">
-      <ng-container *ngIf="alunoSelecionado">
-        <app-profile [exibirPerfil] = "alunoSelecionado"></app-profile>
-      </ng-container>
-    </div>
-  -->

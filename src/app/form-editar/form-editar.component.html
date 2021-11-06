@@ -1,0 +1,25 @@
+<div class="container is-max-desktop">
+    <form [formGroup]="formEditaAluno" (submit)="onSubmit()">
+      <input type="hidden" formControlName="idAluno">
+      <div class="field">
+        <label class="label">Nome</label>
+        <div class="control">
+          <input class="input" type="text" id="nomeAluno" formControlName="nomeAluno">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Idade</label>
+        <div class="control">
+          <input class="input" type="number" id="idadeAluno" formControlName="idadeAluno">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Foto</label>
+        <div class="control">
+          <input class="input" type="text" id="fotoAluno" formControlName="fotoAluno" placeholder="URL da foto do aluno. Opcional.">
+        </div>
+      </div>
+      <button type="submit" class="button is-info">Editar</button>
+    </form>
+  </div>
+  

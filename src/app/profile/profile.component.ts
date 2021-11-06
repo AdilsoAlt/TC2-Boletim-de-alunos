@@ -1,5 +1,8 @@
+import { Location } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Aluno } from '../aluno.model';
+import { DatabaseService } from '../database.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,11 +11,16 @@ import { Aluno } from '../aluno.model';
 })
 export class ProfileComponent implements OnInit {
 
-  @Input() exibirPerfil: Aluno;
-
-  constructor() { }
+  aluno: Aluno;
+  constructor(private database: DatabaseService, private rota: ActivatedRoute, private local: Location) { }
 
   ngOnInit(): void {
+    this.getAluno();
+  }
+
+  getAluno(): void {
+    let id = this.rota.snapshot.paramMap.get("id");
+    this.aluno = this.database.getAluno(parseInt(id));
   }
 
 }
